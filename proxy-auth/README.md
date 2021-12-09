@@ -27,4 +27,4 @@ Endpoints
 
 En este caso siempre devuelve la primer pagina. En caso de querer recibir otra pagina en particular agregar el query param ***?page=numer-page*** a la ruta.
 
-> Nota: si se quiere optener un usuario en particular agregar el query param ***?email=user-to-search@domain.com*** a la ruta.
+> Nota: si se quiere obtener un usuario en particular agregar el query param ***?email=user-to-search@domain.com*** a la ruta, al ser un solo usuario no es necesaria la paginación.
