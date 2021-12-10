@@ -2,8 +2,8 @@
 
 ### ROOT API
 
-1. ejecutar en root de consola $npm install para descargar dependencias.
-2. ejecutar $npm start para bootear el servidor.
+1. ejecutar en el root de cada proyecto ***$npm install*** para descargar dependencias.
+2. ejecutar ***$npm start*** para bootear el servidor.
 
 Repetir este proceso por cada api, es decir, para business y proxy-auth.
 
