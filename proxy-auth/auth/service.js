@@ -15,7 +15,7 @@ const signup = async (email, password) => {
     throw e;
   }
 
-  return 'Registered user successfully';
+  return;
 };
 
 const login = async (email, password) => {

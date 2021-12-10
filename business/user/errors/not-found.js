@@ -1,14 +1,15 @@
 'use strict';
 
 const {code} = require('./symbols');
+const {statusCodes, statusReason} = require('response-status-code');
 
 // eslint-disable-next-line require-jsdoc
 class UserNotFound extends Error {
   // eslint-disable-next-line require-jsdoc
-  constructor(message = 'User Not Found', ...args) {
+  constructor(message = statusReason.NOT_FOUND, ...args) {
     super(message, ...args);
 
-    this[code] = 404;
+    this[code] = statusCodes.NOT_FOUND;
   };
 }
 

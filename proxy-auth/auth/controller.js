@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 'use strict';
 
+const {statusCodes, statusReason} = require('response-status-code');
 const asyncHandler = require('../middlewares/async-handler');
 const BadRequest = require('./errors/bad-request');
 const Service = require('./service');
@@ -11,9 +12,9 @@ const signupHandler = asyncHandler(async (req, res, next) => {
 
   if (!password) throw new BadRequest('Password not provided');
 
-  const response = await Service.signup(email, password);
+  await Service.signup(email, password);
 
-  res.send({response});
+  res.status(statusCodes.CREATED).send({msg: statusReason.CREATED});
 });
 
 

@@ -1,6 +1,7 @@
 'use strict';
 
 const {code} = require('./symbols');
+const {statusCodes, statusReason} = require('response-status-code');
 
 /**
  * Create Unauthorized error with code 401
@@ -11,10 +12,10 @@ class Unauthorized extends Error {
  * @param {int} message Message error.
  * @param {int} ...args possible errors arguments.
  */
-  constructor(message = 'Unauthorized', ...args) {
+  constructor(message = statusReason.UNAUTHORIZED, ...args) {
     super(message, ...args);
 
-    this[code] = 401;
+    this[code] = statusCodes.UNAUTHORIZED;
   };
 }
 

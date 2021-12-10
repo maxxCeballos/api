@@ -1,14 +1,15 @@
 'use strict';
 
 const {code} = require('./symbols');
+const {statusCodes, statusReason} = require('response-status-code');
 
 // eslint-disable-next-line require-jsdoc
 class UserAlreadyExists extends Error {
   // eslint-disable-next-line require-jsdoc
-  constructor(message = 'User Already Exists', ...args) {
+  constructor(message = statusReason.CONFLICT, ...args) {
     super(message, ...args);
 
-    this[code] = 409;
+    this[code] = statusCodes.CONFLICT;
   };
 }
 

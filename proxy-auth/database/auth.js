@@ -3,8 +3,6 @@
 
 const mongoose = require('mongoose');
 
-// Connection URI
-const uri = 'mongodb+srv://challenge:conexa123@cluster-conexa.nggze.mongodb.net/auth?retryWrites=true&w=majority';
 
 const connectDB = async (req, res, next) => {
   try {
@@ -16,7 +14,7 @@ const connectDB = async (req, res, next) => {
       console.log('Success connect DB');
     });
 
-    await mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
+    await mongoose.connect(process.env.DB_CONNECTION_STRING, {useNewUrlParser: true, useUnifiedTopology: true});
   } catch (e) {
     console.log(e);
   }
