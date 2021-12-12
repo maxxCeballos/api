@@ -2,8 +2,9 @@
 
 Libreria enfocada a centralizar todos los response status codes utilizados en el ecosistema de Conexa.
 
-| ----------- | ----------- | ----------- |
+
 | VARIABLE NAME | CODE | REASON PHRASE |
+| ----------- | ----------- | ----------- |
 | OK | 200 | Ok |
 | CREATED | 201 | Created |
 | BAD_REQUEST | 400 | Bad Request |
