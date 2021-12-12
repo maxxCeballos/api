@@ -25,7 +25,7 @@ const statusReason = {
     CONFLICT: 'Conflict',
     BLOCKED_INVOICE: 'The invoice could not be generated',
     DISPATCHED_INVOICE: 'Invoice dispatched to customer',
-}
+};
   
 Object.freeze(statusCodes);
 Object.freeze(statusReason);
