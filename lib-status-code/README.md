@@ -1,6 +1,9 @@
+
 # STATUS-CODES LIB
 
+
 Libreria enfocada a centralizar todos los response status codes utilizados en el ecosistema de Conexa.
+
 
 
 | VARIABLE NAME | CODE | REASON PHRASE |
@@ -15,6 +18,8 @@ Libreria enfocada a centralizar todos los response status codes utilizados en el
 | DISPATCHED_INVOICE | 3001 | Invoice dispatched to customer | 
 
 
+
 > Para ejecutar la lib localmente ejecutar en el root de la lib ***$npm install*** para descargar las dependencias.
+
 
 > Una vez descargadas las dependencias, para correr los tests ejecutar en el root de la lib ***$npm test***
